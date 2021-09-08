@@ -6,6 +6,7 @@
 \RequirePackage{graphicx}
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{listings}
+\RequirePackage{amsmath}
 
 \AtBeginDocument{
     \maketitle
@@ -26,4 +27,5 @@
     frame=shadowbox,
     breaklines=true,
     tabsize=4,
+    showstringspaces=false,
 }
