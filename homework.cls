@@ -31,7 +31,7 @@
 }
 
 \lstdefinelanguage{diff}{
-    morecomment=[f][\color{Grey}]{@@},
+    morecomment=[f][\color{Blue}]{@@},
     morecomment=[f][\color{Green}]{+},
     morecomment=[f][\color{Red}]{-},
     morecomment=[f][\color{Blue}]{+++\ },
