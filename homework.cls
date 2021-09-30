@@ -4,7 +4,7 @@
 
 \RequirePackage[scale = 0.8]{geometry}
 \RequirePackage{graphicx}
-\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage[svgnames]{xcolor}
 \RequirePackage{listings}
 \RequirePackage{amsmath}
 
@@ -19,8 +19,8 @@
         
 \lstset{
     basicstyle=\ttfamily,
-    commentstyle=\color{OliveGreen},
-    keywordstyle=\color{blue},
+    commentstyle=\color{Green},
+    keywordstyle=\color{Blue},
     stringstyle=\color{Brown},
     numberstyle=\ttfamily\small,
     numbers=left,
@@ -28,4 +28,12 @@
     breaklines=true,
     tabsize=4,
     showstringspaces=false,
+}
+
+\lstdefinelanguage{diff}{
+    morecomment=[f][\color{Grey}]{@@},
+    morecomment=[f][\color{Green}]{+},
+    morecomment=[f][\color{Red}]{-},
+    morecomment=[f][\color{Blue}]{+++\ },
+    morecomment=[f][\color{Blue}]{---\ },
 }
