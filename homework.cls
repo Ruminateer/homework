@@ -1,5 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{homework}
+\ProvidesClass{homework}[2022/09/11]
+
+\newif\ifenumerate
+\DeclareOption{enumerate}{\enumeratetrue}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
 \LoadClass{article}
 
 \RequirePackage[scale = 0.8]{geometry}
@@ -10,11 +15,15 @@
 
 \AtBeginDocument{
     \maketitle
+    \ifenumerate
     \begin{enumerate}
+    \fi
 }
         
 \AtEndDocument{
+    \ifenumerate
     \end{enumerate}
+    \fi
 }
         
 \lstset{
