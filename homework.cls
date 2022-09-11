@@ -12,6 +12,7 @@
 \RequirePackage[svgnames]{xcolor}
 \RequirePackage{listings}
 \RequirePackage{amsmath}
+\RequirePackage{enumitem}
 
 \AtBeginDocument{
     \maketitle
